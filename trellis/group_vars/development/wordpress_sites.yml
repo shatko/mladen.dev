@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  example.com:
+  shatko.party:
     site_hosts:
-      - canonical: example.dev
+      - canonical: shatko.party
         redirects:
           - www.example.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
