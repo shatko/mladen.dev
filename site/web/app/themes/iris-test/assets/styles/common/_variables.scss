@@ -5,18 +5,25 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:           #27ae60;
+$brand-primary:             #27ae60;
+
+// Font colors
+$font-primary:              #2e2e2e;
+
+$navigation-active:         #9f9f9f;
 
 // Background colors
-$background-primary:      #282828;
-$background-secondary:    #2e2e2e;
-$background-tertiary:     #ffffff;
-$background-quaternary:   #f1f1f1;
-$background-quinary:      #1a1a1a;
-$background-senary:       #222222;
+$background-primary:        #282828;
+$background-secondary:      #2e2e2e;
+$background-tertiary:       #ffffff;
+$background-quaternary:     #f1f1f1;
+$background-quinary:        #1a1a1a;
+$background-senary:         #222222;
 
 // Border colors
-$border-color-primary:    #f1f1f1;
-$border-color-secondary:  #e9e9e9;
-$border-color-teritary:   #000000;
-$border-color-quaternary: #2d2d2d;
+$border-color-primary:      #f1f1f1;
+$border-color-secondary:    #e9e9e9;
+$border-color-teritary:     #000000;
+$border-color-quaternary:   #2d2d2d;
+
+$navigation-border-bottom:  #0099ff;
