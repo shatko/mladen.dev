@@ -1,0 +1,24 @@
+header {
+  .container {
+    .toggler {
+      width: 100%;
+      height: 60px;
+      background-color: $background-secondary;
+    }
+    .nav-primary-wrapper {
+      padding: 0 15px;
+      background-color: $background-tertiary;
+      .nav-primary {
+        width: 100%;
+        height: 80px;
+        border-bottom: 5px solid $border-color-primary;
+      }
+    }
+    .page-info-wrapper {
+      height: 150px;
+      padding: 0 15px;
+      background-color: $background-tertiary;
+      border-bottom: 5px solid $border-color-secondary;
+    }
+  }
+}
