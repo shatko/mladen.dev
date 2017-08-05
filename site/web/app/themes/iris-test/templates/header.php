@@ -13,6 +13,14 @@
     </div>
     <div class="nav-primary-wrapper">
       <div class="toggler-button toggler-button-close"></div>
+      <div class="hamburger-wrapper">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <nav class="nav-primary">
         <?php
         if (has_nav_menu('primary_navigation')) :
