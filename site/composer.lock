@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "986f244c28eb2ff9c985ba719d8a0912",
+    "content-hash": "7c228bb74730585fd3ff6ea4c597a8f7",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
             "version": "5.6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.6.0",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MTEwNDg1fHR5cGU9cGVyc29uYWx8ZGF0ZT0yMDE3LTA3LTE4IDA1OjQwOjAy=&t=5.6.0",
                 "reference": null,
                 "shasum": null
             },

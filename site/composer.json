@@ -39,7 +39,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MTEwNDg1fHR5cGU9cGVyc29uYWx8ZGF0ZT0yMDE3LTA3LTE4IDA1OjQwOjAy="
         },
         "require": {
           "philippbaschke/acf-pro-installer": "^1.0",

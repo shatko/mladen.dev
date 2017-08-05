@@ -10,15 +10,16 @@ vault_users:
 # Variables to accompany `group_vars/staging/wordpress_sites.yml`
 # Note: the site name (`example.com`) must match up with the site name in the above file.
 vault_wordpress_sites:
-  example.com:
+  iris.shatko.party:
     env:
       db_password: example_dbpassword
+      acf_pro_key: b3JkZXJfaWQ9MTEwNDg1fHR5cGU9cGVyc29uYWx8ZGF0ZT0yMDE3LTA3LTE4IDA1OjQwOjAy
       # Generate your keys here: https://roots.io/salts.html
-      auth_key: "generateme"
-      secure_auth_key: "generateme"
-      logged_in_key: "generateme"
-      nonce_key: "generateme"
-      auth_salt: "generateme"
-      secure_auth_salt: "generateme"
-      logged_in_salt: "generateme"
-      nonce_salt: "generateme"
+      auth_key: "o_%j2QEqOU$Q|-;-p|zXjK]u.F<iXc*]Hbh(PGKg;lvL)?/h}t>|6+Ve`aFLQccu"
+      secure_auth_key: "v&u+{%aZWC;#XDIWBm::iZR;:O>+p`OqiGB}JWa@egs8E4Z;DBa6/(1q)d0CsmY^"
+      logged_in_key: ")Ge3D?eHWt7A0/6vwgv9@=cCsXKL<R|::>BOxU(rAbioBvN8{n7|]DcExg.8dc4%"
+      nonce_key: "u-Xs2Z5OQuuAkQcQ!mYJ.NB4(ktqTj3CIn-G,_6eihP@KN`40%[BgmTIyZi/{mth"
+      auth_salt: "Fh753-<,^e*mBP>v9^&n2?X!SAB3>Ei9arjZY{wgp4!7%)EIDK=Ik$]^Pn:LV8XJ"
+      secure_auth_salt: "q,S8kmTS0]xNd.Hp^^C{dFfbW^dCveX<`]B%7Fm0C}H=m2#m,l?M^L*^`{s.KVS|"
+      logged_in_salt: "_UL0Bxn@wJU(DY|Lg/8FG0vd#sK0.E-rnd>y4H6K<9m@Yw9|]lT!Pp0/%;ED6yXd"
+      nonce_salt: "]M+UZ^(OcZV(;eJca+Q0vN(8yHY.z)O:6LwT<5]_OanCbjk;>qU|1p;>2T.6-.7C"
