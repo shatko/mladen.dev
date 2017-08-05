@@ -4,6 +4,7 @@
       <?php dynamic_sidebar('sidebar-socials'); ?>
     </div>
     <div class="nav-primary-wrapper">
+      <div class="toggler-button toggler-button-close"></div>
       <nav class="nav-primary">
         <?php
         if (has_nav_menu('primary_navigation')) :

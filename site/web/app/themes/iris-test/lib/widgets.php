@@ -55,7 +55,9 @@ class Custom_Widget extends \WP_Widget {
         <?php } ?>
     	<?php endforeach; ?>
     <?php endif;
-    ?></div><?php
+    ?>
+    </div>
+    <?php
 
   }
 

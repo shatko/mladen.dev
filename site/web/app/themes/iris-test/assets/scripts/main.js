@@ -20,7 +20,12 @@
       init: function() {
         // JavaScript to be fired on all pages
 
-
+      var socialToggler = $('.toggler-button');
+      socialToggler.click(function(){
+        $(this).toggleClass('toggler-button-open');
+        $(this).toggleClass('toggler-button-close');
+        $('.toggler').slideToggle('slow');
+      });
 
 
 
