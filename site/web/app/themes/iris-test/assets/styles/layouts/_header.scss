@@ -4,6 +4,41 @@ header {
       width: 100%;
       height: 60px;
       background-color: $background-secondary;
+      .socials-wrapper {
+        height: 100%;
+        width: auto;
+        display: inline-block;
+        float: right;
+        margin-right: 15px;
+        padding-top: 12px;
+        .socials-link {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          border-radius: 17px;
+          background-color: $background-octonary;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .socials-link:hover {
+          background-color: $background-nonary;
+        }
+        .linkedin {
+          background-image: url("../images/social-icons/icon-linkedin.svg");
+        }
+        .twitter {
+          background-image: url("../images/social-icons/icon-twitter.svg");
+        }
+        .pinterest {
+          background-image: url("../images/social-icons/icon-pinterest.svg");
+        }
+        .googleplus {
+          background-image: url("../images/social-icons/icon-google-plus.svg");
+        }
+        .rss {
+          background-image: url("../images/social-icons/icon-rss.svg");
+        }
+      }
     }
     .nav-primary-wrapper {
       padding: 0 15px;

@@ -37,19 +37,25 @@ class Custom_Widget extends \WP_Widget {
 
     // vars
     $socials = get_field('select_socials', 'widget_' . $args['widget_id']);
-    //var_dump($colors);
 
+    ?><div class="socials-wrapper"><?php
     // check
     if( $socials ): ?>
     	<?php foreach( $socials as $social ): ?>
-        <?php if($social=='twitter'){?>
-          <a class="twitter" href="<?php echo $social ?>"></a>
-        <?php }elseif($social=='linked_in'){?>
-          <a class="linkedin" href="<?php echo $social ?>"></a>
+        <?php if($social=='linked_in'){?>
+          <a class="socials-link linkedin" href="<?php echo get_field('insert_linked_in_url','widget_' . $args['widget_id']); ?>"></a>
+        <?php }elseif($social=='twitter'){?>
+          <a class="socials-link twitter" href="<?php echo get_field('insert_twitter_url','widget_' . $args['widget_id']); ?>"></a>
+        <?php }elseif($social=='pinterest'){?>
+          <a class="socials-link pinterest" href="<?php echo get_field('insert_pinterest_url','widget_' . $args['widget_id']); ?>"></a>
+        <?php }elseif($social=='google_plus'){?>
+          <a class="socials-link googleplus" href="<?php echo get_field('insert_google_plus_url','widget_' . $args['widget_id']); ?>"></a>
+        <?php }elseif($social=='rss'){?>
+          <a class="socials-link rss" href="<?php echo get_field('insert_rss_url','widget_' . $args['widget_id']); ?>"></a>
         <?php } ?>
-
     	<?php endforeach; ?>
     <?php endif;
+    ?></div><?php
 
   }
 
