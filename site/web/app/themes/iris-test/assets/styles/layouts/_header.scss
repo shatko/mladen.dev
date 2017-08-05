@@ -22,7 +22,7 @@ header {
                 font-family: "GeorgiaRegular";
                 text-transform: uppercase;
                 font-size: 14px;
-                line-height: 14px;
+                line-height: 14pt;
                 color: $font-primary;
               }
             }
@@ -39,10 +39,65 @@ header {
       }
     }
     .page-info-wrapper {
-      height: 150px;
+      min-height: 150px;
       padding: 0 15px;
       background-color: $background-tertiary;
       border-bottom: 5px solid $border-color-secondary;
+      position: relative;
+      // margin-left: 0;
+      // margin-right: 0;
+      .brand {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: none;
+        width: 230px;
+        h2 {
+          color: $font-secondary;
+          line-height: 43.2pt;
+        }
+        p {
+          color: $font-tertiary;
+        }
+      }
+      .search-form {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        label {
+          .search-field {
+            font-family: "GeorgiaRegular";
+            font-size: 12px;
+            line-height: 14.4pt;
+            color: $font-tertiary;
+            width: 220px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: $background-quaternary;
+          }
+          .search-field::placeholder {
+            font-family: "GeorgiaRegular";
+            font-size: 12px;
+            line-height: 14.4pt;
+            color: $font-tertiary;
+          }
+        }
+        .search-submit {
+          font-family: "GeorgiaRegular";
+          font-size: 12px;
+          text-transform: uppercase;
+          line-height: 14.4pt;
+          color: $font-quaternary;
+          margin-left: 5px;
+          padding: 4px 0 0 0;
+          width: 70px;
+          height: 30px;
+          background-color: $background-septenary;
+          border: none;
+          border-radius: 5px;
+        }
+      }
     }
   }
 }

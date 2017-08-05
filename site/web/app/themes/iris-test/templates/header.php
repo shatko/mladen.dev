@@ -12,9 +12,18 @@
         ?>
       </nav>
     </div>
-    <div class="page-info-wrapper">
-      <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-      <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('description'); ?></a>
+    <div class="page-info-wrapper row">
+      <a class="brand col-md-6" href="<?= esc_url(home_url('/')); ?>">
+        <h2><?php bloginfo('name'); ?></h2>
+        <p><?php bloginfo('description'); ?></p>
+      </a>
+      <form  class="search-form col-md-6" role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+        <label>
+          <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+          <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search Our Website...', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+        </label>
+        <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+      </form>
     </div>
   </div>
 </header>

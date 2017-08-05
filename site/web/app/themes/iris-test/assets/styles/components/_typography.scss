@@ -6,3 +6,20 @@
       url("../fonts/Georgia.woff") format("woff"),
       url("../fonts/Georgia.ttf") format("truetype");
 }
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: "GeorgiaRegular";
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "GeorgiaRegular";
+  font-size: 12px;
+  margin-bottom: 0;
+}
