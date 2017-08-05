@@ -34,6 +34,30 @@
     {
       "type": "package",
       "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro",
+        "version": "1.7.2",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=98197958-e477-434f-9346-b52c6841ee2e&site_url=iris.shatko.party"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro-media-files",
+        "version": "1.4.7",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=98197958-e477-434f-9346-b52c6841ee2e&site_url=iris.shatko.party"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
         "version": "5.6.0",
         "type": "wordpress-plugin",
@@ -55,7 +79,9 @@
     "johnpbloch/wordpress": "4.8.1",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "*"
+    "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "deliciousbrains/wp-migrate-db-pro": "1.7.2",
+    "deliciousbrains/wp-migrate-db-pro-media-files": "1.4.7"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
