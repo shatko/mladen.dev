@@ -1,7 +1,7 @@
 <header class="banner">
   <div class="container">
     <div class="toggler">
-
+      <?php dynamic_sidebar('sidebar-socials'); ?>
     </div>
     <div class="nav-primary-wrapper">
       <nav class="nav-primary">
