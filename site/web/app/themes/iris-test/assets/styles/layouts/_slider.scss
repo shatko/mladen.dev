@@ -2,4 +2,131 @@
   height: 460px;
   background: $background-quaternary;
   border-bottom: 10px solid $border-color-secondary;
+  .slider-teaser {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    h2 {
+      font-size: 36px;
+      line-height: 36pt;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 16pt;
+      line-height: 22.4pt;
+      margin-bottom: 15px;
+    }
+    a {
+      font-family: "GeorgiaRegular";
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 14.4pt;
+      color: #fff;
+      margin-left: 5px;
+      padding: 4px 0 0;
+      width: 130px;
+      height: 30px;
+      background-color: #09f;
+      border: none;
+      border-radius: 5px;
+    }
+    a:after {
+      content: "\00bb";
+      margin-left: 3px;
+    }
+  }
+  .slider {
+    .bx-wrapper {
+      position: relative;
+      top: 10px;
+      .bx-viewport {
+        .main-slider {
+          margin-bottom: 0;
+        }
+      }
+      .bx-controls {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        .bx-controls-direction {
+          display: none;
+        }
+        .bx-pager {
+          height: 15px;
+          .bx-pager-item {
+            margin-right: 5px;
+            display: inline-block;
+            a {
+              background-image: url("../images/pager.svg");
+              background-size: cover;
+              display: inline-block;
+              height: 15px;
+              width: 15px;
+              text-indent: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+            .active {
+              background-image: url("../images/pager-active.svg")!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .slider-wrapper {
+    height: auto;
+    .slider-teaser {
+      align-items: center;
+      h2 {
+        font-size: 36px;
+        line-height: 36pt;
+        margin-bottom: 25px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .slider {
+      .bx-wrapper {
+        position: relative;
+        top: 10px;
+        text-align: center;
+        .bx-viewport {
+          .main-slider {
+            margin-bottom: 0;
+            li {
+              img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .bx-controls {
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-box-pack: center;
+          -webkit-box-align: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          .bx-pager {
+            margin: auto;
+            position: relative;
+            bottom: -120px;
+          }
+        }
+      }
+    }
+  }
 }

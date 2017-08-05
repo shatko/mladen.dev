@@ -35,6 +35,10 @@
           $('.nav').slideToggle('slow');
         });
 
+        // Slider
+        $('.main-slider').bxSlider();
+
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
