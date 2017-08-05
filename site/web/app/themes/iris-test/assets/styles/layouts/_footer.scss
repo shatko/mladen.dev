@@ -1,0 +1,20 @@
+footer {
+  margin-bottom: 50px;
+  .container {
+    .footer-segment-wrapper {
+      margin-left: 0;
+      margin-right: 0;
+      height: 390px;
+      background-color: $background-quinary;
+      border-top: 5px solid $border-color-teritary;
+      .footer-segment {
+
+      }
+    }
+    .footer-bottom {
+      height: 60px;
+      background-color: $background-senary;
+      border-top: 1px solid $border-color-quaternary;
+    }
+  }
+}
