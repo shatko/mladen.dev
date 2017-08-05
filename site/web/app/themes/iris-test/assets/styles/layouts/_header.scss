@@ -70,6 +70,32 @@ header {
         }
       }
     }
+    // Responsive Toggler
+    @media (max-width: 500px) {
+      .toggler {
+        height: 120px;
+        .meta-wrapper {
+          width: 100%;
+          ul {
+            padding-left: 0;
+            margin-left: 0px;
+            margin-top: 15px;
+            text-align: center;
+            li {
+              display: inline-block;
+              float: none;
+            }
+          }
+        }
+        .socials-wrapper {
+          padding-top: 5px;
+          margin-right: 0;
+          width: 100%;
+          height: auto;
+          text-align: center;
+        }
+      }
+    }
     .nav-primary-wrapper {
       padding: 0 15px;
       background-color: $background-tertiary;
@@ -238,6 +264,7 @@ header {
         }
       }
     }
+// Logo and search part
     .page-info-wrapper {
       min-height: 150px;
       padding: 0 15px;
@@ -294,6 +321,25 @@ header {
           background-color: $background-septenary;
           border: none;
           border-radius: 5px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .page-info-wrapper {
+        min-height: 110px;
+        .brand {
+          margin: 0 auto;
+          text-align: center;
+          h2 {
+            line-height: 25pt;
+            font-size: 25px;
+          }
+        }
+        .search-form {
+          justify-content: center;
+          label {
+            margin-bottom: 0;
+          }
         }
       }
     }
