@@ -1,6 +1,14 @@
 <header class="banner">
   <div class="container">
     <div class="toggler">
+      <div class="meta-wrapper">
+        <ul>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">RSS Feeds</a></li>
+          <li><a href="#">Archived News</a></li>
+        </ul>
+      </div>
       <?php dynamic_sidebar('sidebar-socials'); ?>
     </div>
     <div class="nav-primary-wrapper">
