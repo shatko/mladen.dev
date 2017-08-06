@@ -5,7 +5,6 @@
   <?php
   if( have_rows('insert_content') ):
     while ( have_rows('insert_content') ) : the_row();
-
 // slider part
       if( get_row_layout() == 'slider' ):
         ?>
@@ -31,6 +30,7 @@
           </div>
         </div>
         <?php
+// call to action part
       elseif( get_row_layout() == 'call_to _action' ):
         ?>
         <div class="call-to-action-wrapper">
@@ -45,6 +45,7 @@
           </div>
         </div>
         <?php
+// one image four posts part        
       elseif( get_row_layout() == 'one-image-four-posts' ):
         ?>
         <div class="one-image-four-posts-wrapper">
