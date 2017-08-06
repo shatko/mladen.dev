@@ -59,6 +59,7 @@
           </div>
           <div class="footer-segment footer-contact col-md-6">
             <p class="footer-title">Contact Us</p>
+            <?php echo do_shortcode( '[contact-form-7 id="75" title="Contact form 1"]' ); ?>
           </div>
         </div>
       </div>

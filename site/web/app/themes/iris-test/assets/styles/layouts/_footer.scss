@@ -15,10 +15,17 @@ footer {
           text-transform: uppercase;
         }
       }
+      @media (max-width: 991px) {
+        .footer-segment {
+          margin-top: 15px;
+          padding-bottom: 15px;
+        }
+      }
       // About us
       .footer-about {
         img {
           margin-bottom: 25px;
+          width: 100%;
         }
         .about-text {
           color: $font-senary;
@@ -80,8 +87,68 @@ footer {
           margin-top: 30px;
         }
       }
-
-
+    }
+    // Contact form
+    .footer-contact {
+      .wpcf7 {
+        form {
+          position: relative;
+          top: -15px;
+          p {
+            label {
+              height: 30px;
+              margin-bottom: 0;
+              span {
+                input {
+                  margin-left: 0;
+                  border: none;
+                  border-radius: 5px;
+                  height: 30px;
+                  padding-left: 15px;
+                  width: 100%;
+                  background-color: $background-denary
+                }
+                input::placeholder {
+                  font-family: "GeorgiaRegular";
+                  font-size: 13px;
+                  line-height: 21px;
+                  color: $font-octonary;
+                  text-transform: capitalize;
+                }
+                textarea {
+                  border: none;
+                  border-radius: 5px;
+                  padding-left: 15px;
+                  width: 100%!important;
+                  background-color: $background-denary
+                }
+                textarea::placeholder {
+                  font-family: "GeorgiaRegular";
+                  font-size: 13px;
+                  line-height: 21px;
+                  color: $font-octonary;
+                }
+              }
+            }
+            .wpcf7-submit {
+              font-family: "GeorgiaRegular";
+              font-size: 13px;
+              text-transform: uppercase;
+              line-height: 14.4pt;
+              color: $font-quaternary;
+              margin-left: 5px;
+              padding: 0;
+              width: 70px;
+              height: 30px;
+              background-color: $background-septenary;
+              border: none;
+              border-radius: 5px;
+              margin-top: 5px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
     }
     .footer-bottom {
       height: 60px;
