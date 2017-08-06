@@ -81,7 +81,8 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "deliciousbrains/wp-migrate-db-pro": "1.7.2",
-    "deliciousbrains/wp-migrate-db-pro-media-files": "1.4.7"
+    "deliciousbrains/wp-migrate-db-pro-media-files": "1.4.7",
+    "wpackagist-plugin/contact-form-7": "4.8.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
