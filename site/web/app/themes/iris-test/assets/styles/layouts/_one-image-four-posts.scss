@@ -1,0 +1,76 @@
+.one-image-four-posts-wrapper {
+  padding-top: 40px;
+  background: $background-tertiary;
+  .image-left {
+    img {
+      height: 425px;
+      object-fit: cover;
+    }
+  }
+  .posts {
+    .post {
+      min-height: 200px;
+      text-align: center;
+      a {
+        display: inline-block;
+        margin-top: 5px;
+        color: $font-septenary;
+        font-family: "GeorgiaRegular";
+        font-size: 16px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $font-senary;
+        text-decoration: none;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .one-image-four-posts-wrapper {
+    .image-left {
+      text-align: center;
+      img {
+        margin-bottom: 30px;
+        height: 425px;
+        object-fit: cover;
+      }
+    }
+    .posts {
+      .row:first-child {
+        margin-bottom: 30px;
+      }
+      .post {
+        min-height: inherit;
+        height: auto;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .one-image-four-posts-wrapper {
+    .image-left {
+      text-align: center;
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+    .posts {
+      .row:first-child {
+        margin-bottom: 0;
+        height: auto;
+      }
+      .post {
+        margin-bottom: 30px;
+        min-height: inherit;
+        height: auto;
+      }
+    }
+  }
+}
