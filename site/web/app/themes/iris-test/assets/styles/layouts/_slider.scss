@@ -83,6 +83,7 @@
     height: auto;
     .slider-teaser {
       align-items: center;
+      padding-bottom: 30px;
       h2 {
         text-align: center;
       }
@@ -93,7 +94,7 @@
     .slider {
       .bx-wrapper {
         position: relative;
-        top: 10px;
+        top: 0;
         text-align: center;
         .bx-viewport {
           .main-slider {
