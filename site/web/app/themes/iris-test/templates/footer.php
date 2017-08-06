@@ -28,10 +28,36 @@
       </div>
       <div class="col-lg-6">
         <div class="row">
-          <div class="footer-segment footer-about col-md-6">
+          <div class="footer-segment footer-last-blogs col-md-6">
             <p class="footer-title">Latest Blog posts</p>
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 2
+            );
+            $post_query = new WP_Query($args);
+            if($post_query->have_posts() ) {
+              while($post_query->have_posts() ) {
+                $post_query->the_post();
+                ?>
+                <div class="two-blogs-single">
+                  <h5><?php the_title(); ?></h5>
+                  <span><?php the_author(); ?>,
+                    <?php
+                    $author = get_userdata(get_the_author_meta('ID'));
+                    echo $author->user_url;
+                    ?>
+                  </span>
+                  <span><?php echo get_the_date('l, F jS, Y'); ?></span>
+                  <p><?php echo get_the_excerpt(); ?></p>
+                  <a class="read-more" href="<?php echo the_permalink(); ?>">Read More</a>
+                </div>
+                <?php
+              }
+            }
+            ?>
           </div>
-          <div class="footer-segment footer-links col-md-6">
+          <div class="footer-segment footer-contact col-md-6">
             <p class="footer-title">Contact Us</p>
           </div>
         </div>
