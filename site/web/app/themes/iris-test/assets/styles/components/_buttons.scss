@@ -1,0 +1,15 @@
+.read-more {
+  color: $font-septenary;
+  font-family: "GeorgiaRegular";
+  font-size: 12px;
+  text-decoration: none;
+  float: right;
+}
+.read-more:after {
+  content: "\00bb";
+  margin-left: 3px;
+}
+.read-more:hover {
+  color: $font-senary;
+  text-decoration: none;
+}
